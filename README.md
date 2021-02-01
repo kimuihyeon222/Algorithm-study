@@ -1,2 +1,2 @@
-## Algorithm-study
+# Algorithm-study
 # Baekjoon solution
