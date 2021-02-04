@@ -2,6 +2,7 @@
 #include <algorithm>
 using namespace std;
 
+//이분 검색방법 사용
 int main() {
 	int k, n;
 	cin >> k >> n;
