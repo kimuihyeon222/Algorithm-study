@@ -70,7 +70,7 @@ void check(int x, int y){
 							else{
 								check(x+1, 0);
 							}
-							cout <<"two " <<  x << " " << y << "sex\n";
+							cout <<"two " <<  x << " " << y << "\n";
 							//위에 과정에서 실패 했을 경우 다시 map, paper배열을 복구 
 							for(int x_tmp=x; x_tmp < x_tmp+i; x_tmp++){
 								for(int y_tmp=y; y_tmp < y_tmp+i; y_tmp++){
@@ -81,7 +81,6 @@ void check(int x, int y){
 						}
 					}
 				}
-				cout << "three " << x << " " << y << "\n";
 			}
 		}
 	}
