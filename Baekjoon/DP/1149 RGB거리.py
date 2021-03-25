@@ -33,3 +33,18 @@ for i in range(0, n):
     rgb = d.index(min(check[i]))
 
 print(check[n-1][rgb])
+
+
+# 2번째 방법
+n = int(input())
+
+data = [list(map(int, input().split())) for _ in range(n)]
+
+d = [[0]*3 for _ in range(n+1)]
+
+for i in range(1, n+1):
+    d[i][0] = min(d[i-1][1], d[i-1][2]) + data[i-1][0]
+    d[i][1] = min(d[i-1][0], d[i-1][2]) + data[i-1][1]
+    d[i][2] = min(d[i-1][0], d[i-1][1]) + data[i-1][2]
+
+print(min(d[n]))
