@@ -5,7 +5,6 @@ arr = list(map(int, input().split()))
 d = [1 for _ in range(n)]
 
 for i in range(1, n):
-    cnt = 0
     for j in range(i):
         if arr[j] < arr[i]:
             d[i] = max(d[i], d[j]+1)
