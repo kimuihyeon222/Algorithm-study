@@ -11,7 +11,8 @@ for i in range(1, n):
 
 print(max(d))
 
-###
+"""
+LIS알고리즘
 방법은 끝 부분에 있음
 https://www.youtube.com/watch?v=5Lu34WIx2Us
-###
+"""
