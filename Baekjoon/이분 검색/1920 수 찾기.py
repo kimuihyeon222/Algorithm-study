@@ -11,7 +11,7 @@ for i in range(m):
     result = -1
     while(left <= right):
         mid = int((left+right)/2)
-        
+        # python에서 몫 구하는 방법 // 쓰면됨 -> mid = (left+right) // 2 
         if arr1[mid] > arr2[i]:
             right = mid - 1
         elif arr1[mid] < arr2[i]:
