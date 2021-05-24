@@ -21,3 +21,19 @@ while len(arr) != 1:
     arr = tmp
 
 print(arr[0])
+
+##########################
+# 원래 아래처럼 queue자료구조를 이용해서 해야함
+# 위의 방식은 비슷하긴함
+
+from collections import deque
+
+n = int(input())
+
+cards = deque(range(1, n+1))
+
+while len(cards) != 1:
+    cards.popleft()
+    cards.append(cards.popleft())
+    
+print(cards[0])
