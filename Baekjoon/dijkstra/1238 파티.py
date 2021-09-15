@@ -48,3 +48,7 @@ for i in range(1, n+1):
     result[i] = distance[i][x] + distance[x][i]
 
 print(max(result))
+
+
+# 최소힙 + 다익스트라 방법
+# https://www.youtube.com/watch?v=F-tkqjUiik0
